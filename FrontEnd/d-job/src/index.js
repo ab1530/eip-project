@@ -8,7 +8,7 @@ import SignInEntreprise from './Pages/Entreprises/signInEntreprise'
 import SignUpEntreprise from './Pages/Entreprises/signUpEntreprise';
 import SignInCandidat from './Pages/Candidats/signInCandidat'
 import SignupCandidat from './Pages/Candidats/signUpCandidat'
-import Dashboard from './Pages/Candidats/dashboard'
+import Dashboard from './Pages/Candidats/srcDashBoard/views/Dashboard'
 
 ReactDOM.render(
   <BrowserRouter>
