@@ -2287,6 +2287,14 @@ fieldset:disabled a.btn {
   line-height: 1.35;
   border-radius: 0.25rem; }
 
+  .btn-rachid {
+    padding: 50px 115px;
+    font-size: 0.75rem;
+    line-height: 1.35;
+    border-radius: 0.25rem; 
+    margin-top: 15%;
+  }
+
 .btn-block {
   display: block;
   width: 100%; }

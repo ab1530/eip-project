@@ -188,7 +188,7 @@ class Dashboard extends React.Component {
                           className={classNames("btn-simple", {
                             active: this.state.bigChartData === "data2"
                           })}
-                          onClick={() => this.setBgChartData("data2")}
+                          // onClick={() => this.setBgChartData("data2")}
                         >
                           <input
                             className="d-none"
@@ -210,7 +210,7 @@ class Dashboard extends React.Component {
                           className={classNames("btn-simple", {
                             active: this.state.bigChartData === "data3"
                           })}
-                          onClick={() => this.setBgChartData("data3")}
+                          // onClick={() => this.setBgChartData("data3")}
                         >
                           <input
                             className="d-none"

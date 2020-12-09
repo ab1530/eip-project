@@ -9,12 +9,13 @@ import SignUpEntreprise from './Pages/Entreprises/signUpEntreprise';
 import SignInCandidat from './Pages/Candidats/signInCandidat'
 import SignupCandidat from './Pages/Candidats/signUpCandidat'
 import Dashboard from './Pages/Candidats/srcDashBoard/views/Dashboard'
+import WhoAreYou from './Pages/WhoAreYou'
 
 ReactDOM.render(
   <BrowserRouter>
   <Switch>
   <React.StrictMode>
-    <Route path='/' exact render={props => <App {...props} />}/>
+    <Route path='/' exact render={props => <WhoAreYou {...props} />}/>
     <Route path='/sign-in-entreprise' exact render={props => <SignInEntreprise {...props} />} />
     <Route path='/sign-up-entreprise' exact render={props => <SignUpEntreprise {...props} />} />
     <Route path='/sign-in-candidat' exact render={props => <SignInCandidat {...props} />} />
