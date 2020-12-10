@@ -12,6 +12,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import Logo from '../../assets/logo/logo_D_job.png';
 
 function Copyright() {
   return (
@@ -56,6 +57,7 @@ export default function SignInCandidat() {
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
+        <img src={Logo} width="150" alt="logo" />
         <Typography component="h1" variant="h5">
           Company, Sign in
         </Typography>
