@@ -53,9 +53,12 @@ import {
   chartExample4
 } from "../../variables/charts.js";
 
+import C from '../../assets/logo/logo_c.png';
+
+
 import '../../assets/css/black-dashboard-react.css'
 
-var tab = ["C", "C++", "JS"]
+var tab = [1, C]
 
 var candidat1 = [1, 'Compétences Principales:\n-JavaScript\n-React JS\n-Node JS\nVue JS\nAngular JS\n-HTML 5 \n-CSS 3\nCompétences Secondaires:\n-Python\n-C++\n-C\n-Haskell']
 var candidat2 = [2, 'Compétences Principales:\n-JavaScript\n-React JS\n-Node JS\nAngular JS\n-HTML 5 \n-CSS 3\nCompétences Secondaires:\n-C++\n-C\n-Haskell']

@@ -21,6 +21,15 @@ import classNames from "classnames";
 // react plugin used to create charts
 import { Line, Bar } from "react-chartjs-2";
 
+import Logo from '../../../../assets/logo/logo_D_job.png';
+import C from '../../../../assets/logo/logo_c.png';
+import CPP from '../../../../assets/logo/cpp.png';
+import JS from '../../../../assets/logo/nodejs.png';
+import HS from '../../../../assets/logo/haskell.png';
+import PL from '../../../../assets/logo/perl.png';
+import PH from '../../../../assets/logo/php.png';
+
+
 // reactstrap components
 import {
   Button,
@@ -270,16 +279,12 @@ class Dashboard extends React.Component {
                 </CardHeader>
                 <CardBody>
                   <div className="chart-area">
-                    {/* <Bar
-                      data={chartExample3.data}
-                      options={chartExample3.options}
-                    /> */}
-                    {/* {tab} */}
-                    {/* <div key={tab}>
-                 <dt>{tab}</dt> */}
-                 <dd>{tab.join("\n")}</dd>
-                 <hr></hr>
-                 {/* </div> */}
+                  <img src={C} width="75" alt="logo" />
+                  <img src={CPP} width="75" alt="logo" />
+                  <img src={JS} width="75" alt="logo" />
+                  <img src={HS} width="75" alt="logo" />
+                  <img src={PL} width="75" alt="logo" />
+                  <img src={PH} width="75" alt="logo" />
                   </div>
                 </CardBody>
               </Card>
