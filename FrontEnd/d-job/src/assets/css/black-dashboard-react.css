@@ -2288,11 +2288,12 @@ fieldset:disabled a.btn {
   border-radius: 0.25rem; }
 
   .btn-rachid {
-    padding: 50px 115px;
+    padding: 55px 115px;
     font-size: 0.75rem;
     line-height: 1.35;
     border-radius: 0.25rem; 
     margin-top: 15%;
+    font-weight: 100px;
   }
 
 .btn-block {
@@ -3358,6 +3359,99 @@ input[type="button"].btn-block {
   background-clip: border-box;
   border: 0.0625rem solid rgba(34, 42, 66, 0.05);
   border-radius: 0.2857rem; }
+
+  .card-rachid {
+    overflow: hidden; }
+    .card-rachid .card-header .card-title i {
+      font-size: 16px;
+      margin-right: 5px;
+      margin-bottom: 3px; }
+    .card-rachid .card-header .card-category {
+      margin-bottom: 5px; }
+    .card-rachid .card-body {
+      padding-left: 5px;
+      padding-right: 5px; }
+      .card-rachid .card-body .tab-space {
+        padding: 0; }
+    .card-rachid .table {
+      margin-bottom: 0; }
+      .card-rachid .table td {
+        border-top: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    .card-rachid .card-progress {
+      margin-top: 30px;
+      padding: 0 10px; }
+    .card-rachid .chart-area {
+      height: 800px;
+      width: 100%; }
+    .card-rachid .card-footer {
+      margin-top: 15px; }
+      .card-rachid .card-footer .stats {
+        color: #9A9A9A; }
+    .card-rachid .dropdown {
+      position: absolute;
+      right: 20px;
+      top: 20px; }
+      .card-rachid .dropdown .btn {
+        margin: 0; }
+    .card-rachid.card-rachid-pie .chart-area {
+      padding: 10px 0 25px;
+      height: auto; }
+    .card-rachid.card-rachid-pie .card-title {
+      margin-bottom: 10px; }
+      .card-rachid.card-rachid-pie .card-title i {
+        font-size: 1rem; }
+
+
+
+        .card-rachid2 {
+          overflow: hidden;
+          width: 800px;
+        }
+          .card-rachid2 .card-header .card-title i {
+            font-size: 16px;
+            margin-right: 5px;
+            margin-bottom: 3px; }
+          .card-rachid2 .card-header .card-category {
+            margin-bottom: 5px; 
+          }
+          .card-rachid2 .card-body {
+            padding-left: 5px;
+            padding-right: 5px; }
+            .card-rachid2 .card-body .tab-space {
+              padding: 0; }
+          .card-rachid2 .table {
+            margin-bottom: 0; }
+            .card-rachid2 .table td {
+              border-top: none;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+          .card-rachid2 .card-progress {
+            margin-top: 30px;
+            padding: 0 10px; }
+          .card-rachid2 .chart-area {
+            height: 800px;
+            width: 800px; }
+          .card-rachid2 .card-footer {
+            margin-top: 15px; }
+            .card-rachid2 .card-footer .stats {
+              color: #9A9A9A; }
+          .card-rachid2 .dropdown {
+            position: absolute;
+            right: 20px;
+            top: 20px; }
+            .card-rachid2 .dropdown .btn {
+              margin: 0; }
+          .card-rachid2.card-rachid2-pie .chart-area {
+            padding: 10px 0 25px;
+            height: auto; }
+          .card-rachid2.card-rachid2-pie .card-title {
+            margin-bottom: 10px; }
+            .card-rachid2.card-rachid2-pie .card-title i {
+              font-size: 1rem; }
+      
+
+
+
   .card > hr {
     margin-right: 0;
     margin-left: 0; }

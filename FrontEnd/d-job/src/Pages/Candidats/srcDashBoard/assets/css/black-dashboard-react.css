@@ -2281,6 +2281,14 @@ fieldset:disabled a.btn {
   line-height: 1.35;
   border-radius: 0.4285rem; }
 
+  .btn-rachid {
+    padding: 50px 115px;
+    font-size: 0.75rem;
+    line-height: 1.35;
+    border-radius: 0.25rem; 
+    margin-top: 15%;
+  }
+
 .btn-sm, .btn-group-sm > .btn {
   padding: 5px 15px;
   font-size: 0.75rem;
@@ -3363,6 +3371,10 @@ input[type="button"].btn-block {
 .card-body {
   flex: 1 1 auto;
   padding: 1.5rem; }
+
+  .card-entreprise {
+
+  }
 
 .card-title {
   margin-bottom: 1.25rem; }
@@ -12365,6 +12377,52 @@ textarea.form-control {
     font-size: .875rem;
     top: -1px; } }
 
+
+/*      */
+
+.card-rachid {
+  overflow: hidden; }
+  .card-rachid .card-header .card-title i {
+    font-size: 16px;
+    margin-right: 5px;
+    margin-bottom: 3px; }
+  .card-rachid .card-header .card-category {
+    margin-bottom: 5px; }
+  .card-rachid .card-body {
+    padding-left: 5px;
+    padding-right: 5px; }
+    .card-rachid .card-body .tab-space {
+      padding: 0; }
+  .card-rachid .table {
+    margin-bottom: 0; }
+    .card-rachid .table td {
+      border-top: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+  .card-rachid .card-progress {
+    margin-top: 30px;
+    padding: 0 10px; }
+  .card-rachid .chart-area {
+    height: 800px;
+    width: 100%; }
+  .card-rachid .card-footer {
+    margin-top: 15px; }
+    .card-rachid .card-footer .stats {
+      color: #9A9A9A; }
+  .card-rachid .dropdown {
+    position: absolute;
+    right: 20px;
+    top: 20px; }
+    .card-rachid .dropdown .btn {
+      margin: 0; }
+  .card-rachid.card-rachid-pie .chart-area {
+    padding: 10px 0 25px;
+    height: auto; }
+  .card-rachid.card-rachid-pie .card-title {
+    margin-bottom: 10px; }
+    .card-rachid.card-rachid-pie .card-title i {
+      font-size: 1rem; }
+
+/*      */
 .card-chart {
   overflow: hidden; }
   .card-chart .card-header .card-title i {

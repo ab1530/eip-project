@@ -6,6 +6,8 @@ import App from './App';
 import {BrowserRouter, Route, Redirect, Switch} from 'react-router-dom';
 import SignInEntreprise from './Pages/Entreprises/signInEntreprise'
 import SignUpEntreprise from './Pages/Entreprises/signUpEntreprise';
+import HomePageEntreprise from './Pages/Entreprises/homePageEntreprise'
+import MesOffres from './Pages/Entreprises/mesOffres'
 import SignInCandidat from './Pages/Candidats/signInCandidat'
 import SignupCandidat from './Pages/Candidats/signUpCandidat'
 import Dashboard from './Pages/Candidats/srcDashBoard/views/Dashboard'
@@ -21,6 +23,8 @@ ReactDOM.render(
     <Route path='/sign-in-candidat' exact render={props => <SignInCandidat {...props} />} />
     <Route path='/sign-up-candidat' exact render={props => <SignupCandidat {...props} />} />
     <Route path='/dashboard' exact render={props => <Dashboard {...props} />} />
+    <Route path='/home-page-entreprise' exact render={props => <HomePageEntreprise {...props} />} />
+    <Route path='/mes-offres' exact render={props => <MesOffres {...props} />} />
   </React.StrictMode>,
   </Switch>
   </BrowserRouter>,

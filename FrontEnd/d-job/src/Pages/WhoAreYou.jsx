@@ -2,7 +2,7 @@ import React from 'react'
 import { Row } from 'reactstrap';
 import '../assets/css/black-dashboard-react.css'
 
-export default function SignInEntreprise() {
+export default function WhoAreYou() {
     return (
         <div>
             <div>
@@ -34,7 +34,7 @@ export default function SignInEntreprise() {
                 <Row>
                 <label class="col-md-4 control-label" for="singlebutton"></label>
                 <div class="col-md-4 text-center"> 
-                    <button id="singlebutton" name="singlebutton" class="btn btn-primary btn-rachid" onClick={(e) => {
+                <button id="singlebutton" name="singlebutton" class="btn btn-primary btn-rachid" onClick={(e) => {
       e.preventDefault();
       window.location.href='/sign-in-candidat';
       }}>Candidat</button> 

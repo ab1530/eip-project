@@ -64,8 +64,9 @@ var candidat4 = [4, 'Compétences Principales:\n-JavaScript\n-React JS\n-Node JS
 var candidat5 = [5, 'Compétences Principales:\n-JavaScript\n-Angular JS\n-Node JS\n-HTML 5 \n-CSS 3\nCompétences Secondaires:\nSwift']
 var candidat6 = [6, 'Compétences Principales:\n-JavaScript\n-Vue JS\n-Node JS\n-HTML 5 \n-CSS 3']
 
+var Offre4 = "Offre n°4: Dévelloppeur FullStack Javascript\n Le candidat aura pour tache de créer une page de\nformulaire pour l'ajout de groupe et de compte RH\n sur la plateforme.\nIl aura aussi pour tâche de retravailler l'API\n de sorte qu'elle soit adaptée à ces \nformulaires.\nDurée de la mission 1 semaine\nGratification: 300€/jour"
 
-class HomePageEntreprise extends React.Component {
+class MesOffres extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -119,50 +120,6 @@ class HomePageEntreprise extends React.Component {
 
 
               
-          {/* <div className="content">
-            <Col md="4">
-              <Card className="card-user">
-                <CardBody>
-                  <CardText />
-                  <div className="author">
-                    <div className="block block-one" />
-                    <div className="block block-two" />
-                    <div className="block block-three" />
-                    <div className="block block-four" />
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        className="avatar"
-                        src={require("../assets/img/emilyz.jpg")}
-                      />
-                      <h5 className="title">Mike Andrew</h5>
-                    </a>
-                    <p className="description">Ceo/Co-Founder</p>
-                  </div>
-                  <div className="card-description">
-                    -------------------------------------------------------
-                    -------------------------------------------------------
-                    -------------------------------------------------------
-                    -------------------------------------------------------
-                    -------------------------------------------------------
-                  </div>
-                </CardBody>
-                <CardFooter>
-                  <div className="button-container">
-                    <Button className="btn-icon btn-round" color="facebook">
-                      <i className="fab fa-facebook" />
-                    </Button>
-                    <Button className="btn-icon btn-round" color="twitter">
-                      <i className="fab fa-twitter" />
-                    </Button>
-                    <Button className="btn-icon btn-round" color="google">
-                      <i className="fab fa-google-plus" />
-                    </Button>
-                  </div>
-                </CardFooter>
-              </Card>
-            </Col> 
-            </div> */}
             
           <Row>
             <Col lg="4">
@@ -170,31 +127,31 @@ class HomePageEntreprise extends React.Component {
                              Boutons avec les candidats                          */ }
               <Card className="card-rachid">
                 <CardHeader>
-                  <h5 className="card-category">Offre n°4: Dévelloppeur FullStack Javascript</h5>
+                  <h5 className="card-category"></h5>
                   <CardTitle tag="h3">
                     <i className="tim-icons icon-bell-55 text-info" />{" "}
-                    6 Candidats
+                    6 Offres
                   </CardTitle>
                 </CardHeader>
                 <CardBody>
                   <div className="chart-area">
                   <Row>  
-                    <button onClick={() => this.setBgChartData(candidat1[1])} class="btn btn-primary btn-rachid">Candidat 1</button>
+                    <button class="btn btn-primary btn-rachid">Offre 1</button>
                   </Row>
                   <Row>  
-                    <button onClick={() => this.setBgChartData(candidat2[1])} class="btn btn-primary btn-rachid">Candidat 2</button>
+                    <button class="btn btn-primary btn-rachid">Offre 2</button>
                   </Row>
                   <Row>  
-                    <button onClick={() => this.setBgChartData(candidat3[1])} class="btn btn-primary btn-rachid">Candidat 3</button>
+                    <button class="btn btn-primary btn-rachid">Offre 3</button>
                   </Row>
                   <Row>  
-                    <button onClick={() => this.setBgChartData(candidat4[1])} class="btn btn-primary btn-rachid">Candidat 4</button>
+                    <button onClick={() => this.setBgChartData(Offre4)}class="btn btn-primary btn-rachid">Offre 4</button>
                   </Row>
                   <Row>  
-                    <button onClick={() => this.setBgChartData(candidat5[1])} class="btn btn-primary btn-rachid">Candidat 5</button>
+                    <button class="btn btn-primary btn-rachid">Offre 5</button>
                   </Row>
                   <Row>  
-                    <button onClick={() => this.setBgChartData(candidat6[1])} class="btn btn-primary btn-rachid">Candidat 6</button>
+                    <button class="btn btn-primary btn-rachid">Offre 6</button>
                   </Row>
                   </div>
                 </CardBody>
@@ -208,43 +165,23 @@ class HomePageEntreprise extends React.Component {
                   <h5 className="card-category">Me</h5>
                   <CardTitle tag="h3">
                     <i className="tim-icons icon-delivery-fast text-primary" />{" "}
-                    Compétences
+                    Description
                   </CardTitle>
                 </CardHeader>
                 <CardBody>
                   <div className="chart-area">
                     <h3>{this.state.competences.split('\n').map(str => <p>{str}</p>)}</h3>
                   </div>
+                   <div display='none'>
+                  <button id="singlebutton" name="singlebutton" class="btn btn-primary btn-rachid" onClick={(e) => {
+      e.preventDefault();
+      window.location.href='/home-page-entreprise';
+      }}>Voir les Candidats</button>
+      </div> 
                 </CardBody>
               </Card>
             </Col>
 
-            <Col lg="4">
-             {/*
-                             Boutons d'interactions avec le candidat                          */ }
-              <Card className="card-rachid">
-                <CardHeader>
-                  <h5 className="card-category"></h5>
-                  <CardTitle tag="h3">
-                    <i className="tim-icons icon-bell-55 text-info" />{" "}
-                    Communication avec le Candidat
-                  </CardTitle>
-                </CardHeader>
-                <CardBody>
-                  <div className="chart-area">
-                  <Row>  
-                    <button class="btn btn-primary btn-rachid">Proposer un test technique / mise en situation</button>
-                  </Row>
-                  <Row>  
-                    <button class="btn btn-primary btn-rachid">Envoyer un Message </button>
-                  </Row>
-                  <Row>  
-                    <button class="btn btn-primary btn-rachid">Refuser La Candidature + Raison</button>
-                  </Row>
-                  </div>
-                </CardBody>
-              </Card>
-            </Col>
 
           </Row>
           
@@ -254,4 +191,4 @@ class HomePageEntreprise extends React.Component {
   }
 }
 
-export default HomePageEntreprise;
+export default MesOffres;

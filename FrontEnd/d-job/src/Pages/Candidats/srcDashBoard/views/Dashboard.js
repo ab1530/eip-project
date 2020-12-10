@@ -53,7 +53,7 @@ import {
   chartExample3,
   chartExample4
 } from "../variables/charts.js";
-import '../assets/css/black-dashboard-react.css'
+import '../../../../assets/css/black-dashboard-react.css'
 
 var tab = ["C", "C++", "JS"]
 
