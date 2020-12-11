@@ -344,7 +344,7 @@ const chartExample4 = {
     gradientStroke.addColorStop(0, "rgba(66,134,121,0)"); //green colors
 
     return {
-      labels: ["JUL", "AUG", "SEP", "OCT", "NOV"],
+      labels: ["JAN", "FEV", "MAR", "AVR", "MAI", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV"],
       datasets: [
         {
           label: "My First dataset",
@@ -361,7 +361,7 @@ const chartExample4 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [2, 1, 0, 1, 3]
+          data: [1, 0, 1, 0, 2, 0, 0, 0, 0, 1, 2, 0]
         }
       ]
     };

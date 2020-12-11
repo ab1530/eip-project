@@ -58,8 +58,8 @@ export default function SignInCandidat() {
           <LockOutlinedIcon />
         </Avatar>
         <img src={Logo} width="150" alt="logo" />
+          Candidat, Sign in
         <Typography component="h1" variant="h5">
-          Company, Sign in
         </Typography>
         <form className={classes.form} noValidate>
           <TextField

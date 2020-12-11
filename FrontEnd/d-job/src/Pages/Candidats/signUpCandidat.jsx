@@ -60,8 +60,8 @@ const useStyles = makeStyles((theme) => ({
             <LockOutlinedIcon />
           </Avatar>
           <img src={Logo} width="150" alt="logo" />
+          Candidat,Sign up
           <Typography component="h1" variant="h5">
-            Candidat,Sign up
           </Typography>
           <form className={classes.form} noValidate={false}>
             <Grid container spacing={2}>

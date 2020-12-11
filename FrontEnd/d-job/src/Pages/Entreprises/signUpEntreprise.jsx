@@ -12,6 +12,8 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import Logo from '../../assets/logo/logo_D_job.png';
+
 
 function Copyright() {
   return (
@@ -57,8 +59,9 @@ export default function SignUpEntreprise() {
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
-        <Typography component="h1" variant="h5">
+        <img src={Logo} width="150" alt="logo" />
           Company, Sign up
+        <Typography component="h1" variant="h5">
         </Typography>
         <form className={classes.form} noValidate={false}>
           <Grid container spacing={2}>

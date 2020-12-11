@@ -10,8 +10,10 @@ import HomePageEntreprise from './Pages/Entreprises/homePageEntreprise'
 import MesOffres from './Pages/Entreprises/mesOffres'
 import SignInCandidat from './Pages/Candidats/signInCandidat'
 import SignupCandidat from './Pages/Candidats/signUpCandidat'
+import HomePageCandidat from './Pages/Candidats/homePageCandidat'
 import Dashboard from './Pages/Candidats/srcDashBoard/views/Dashboard'
 import WhoAreYou from './Pages/WhoAreYou'
+import GenerateCv from './Pages/Candidats/generateCv'
 
 ReactDOM.render(
   <BrowserRouter>
@@ -25,6 +27,8 @@ ReactDOM.render(
     <Route path='/dashboard' exact render={props => <Dashboard {...props} />} />
     <Route path='/home-page-entreprise' exact render={props => <HomePageEntreprise {...props} />} />
     <Route path='/mes-offres' exact render={props => <MesOffres {...props} />} />
+    <Route path='/generate-cv' exact render={props => <GenerateCv {...props} />} />
+    <Route path='/home-page-candidat' exact render={props => <HomePageCandidat {...props} />} />
   </React.StrictMode>,
   </Switch>
   </BrowserRouter>,
