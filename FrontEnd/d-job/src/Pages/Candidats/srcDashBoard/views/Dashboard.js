@@ -158,7 +158,7 @@ class Dashboard extends React.Component {
                   <Row>
                     <Col className="text-left" sm="6">
                       <h5 className="card-category">Infos</h5>
-                      <CardTitle tag="h2">Likes</CardTitle>
+                      <CardTitle tag="h2">Likes: 289</CardTitle>
                     </Col>
                     <Col sm="6">
                       <ButtonGroup
@@ -294,7 +294,7 @@ class Dashboard extends React.Component {
                 <CardHeader>
                   <h5 className="card-category">Offres acceptées</h5>
                   <CardTitle tag="h3">
-                    <i className="tim-icons icon-send text-success" /> 27
+                    <i className="tim-icons icon-send text-success" /> 8
                   </CardTitle>
                 </CardHeader>
                 <CardBody>
@@ -318,7 +318,7 @@ class Dashboard extends React.Component {
             <Col lg="12" md="12">
               <Card>
                 <CardHeader>
-                  <CardTitle tag="h4">Détails des Matchs</CardTitle>
+                  <CardTitle tag="h4">Détails des derniers Matchs</CardTitle>
                 </CardHeader>
                 <CardBody>
                   <Table className="tablesorter" responsive>

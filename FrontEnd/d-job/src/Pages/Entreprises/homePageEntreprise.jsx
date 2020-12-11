@@ -21,6 +21,13 @@ import classNames from "classnames";
 // react plugin used to create charts
 import { Line, Bar } from "react-chartjs-2";
 
+import Logo from '../../assets/logo/logo_D_job.png';
+import CLogo from '../../assets/logo/logo_c.png';
+import CPP from '../../assets/logo/cpp.png';
+import JS from '../../assets/logo/nodejs.png';
+import HS from '../../assets/logo/haskell.png';
+import PL from '../../assets/logo/perl.png';
+import PH from '../../assets/logo/php.png';
 // reactstrap components
 import {
   Button,
@@ -60,12 +67,13 @@ import '../../assets/css/black-dashboard-react.css'
 
 var tab = [1, C]
 
-var candidat1 = [1, 'Compétences Principales:\n-JavaScript\n-React JS\n-Node JS\nVue JS\nAngular JS\n-HTML 5 \n-CSS 3\nCompétences Secondaires:\n-Python\n-C++\n-C\n-Haskell']
-var candidat2 = [2, 'Compétences Principales:\n-JavaScript\n-React JS\n-Node JS\nAngular JS\n-HTML 5 \n-CSS 3\nCompétences Secondaires:\n-C++\n-C\n-Haskell']
-var candidat3 = [3, 'Compétences Principales:\n-JavaScript\n-Ember JS\n-Vue JS\n-Node JS\n-HTML 5 \n-CSS 3\nCompétences Secondaires:\n-Python\n-C\n-Haskell']
-var candidat4 = [4, 'Compétences Principales:\n-JavaScript\n-React JS\n-Node JS\n-HTML 5 \n-CSS 3\nCompétences Secondaires:\n-F#\n-Haskell']
-var candidat5 = [5, 'Compétences Principales:\n-JavaScript\n-Angular JS\n-Node JS\n-HTML 5 \n-CSS 3\nCompétences Secondaires:\nSwift']
-var candidat6 = [6, 'Compétences Principales:\n-JavaScript\n-Vue JS\n-Node JS\n-HTML 5 \n-CSS 3']
+
+var candidat1 = [1, 'Compétences Principales:\n-JavaScript\n-React JS\n-Node JS\nVue JS\nAngular JS\n-HTML 5 \n-CSS 3\nCompétences Secondaires:\n-Python\n-C++\n-C\n-Haskell', [C, JS]]
+var candidat2 = [2, 'Compétences Principales:\n-JavaScript\n-React JS\n-Node JS\nAngular JS\n-HTML 5 \n-CSS 3\nCompétences Secondaires:\n-C++\n-C\n-Haskell', [C, JS]]
+var candidat3 = [3, 'Compétences Principales:\n-JavaScript\n-Ember JS\n-Vue JS\n-Node JS\n-HTML 5 \n-CSS 3\nCompétences Secondaires:\n-Python\n-C\n-Haskell', [C, JS]]
+var candidat4 = [4, 'Compétences Principales:\n-JavaScript\n-React JS\n-Node JS\n-HTML 5 \n-CSS 3\nCompétences Secondaires:\n-F#\n-Haskell', [C, JS]]
+var candidat5 = [5, 'Compétences Principales:\n-JavaScript\n-Angular JS\n-Node JS\n-HTML 5 \n-CSS 3\nCompétences Secondaires:\nSwift', [C, JS]]
+var candidat6 = [6, 'Compétences Principales:\n-JavaScript\n-Vue JS\n-Node JS\n-HTML 5 \n-CSS 3', [C, JS]]
 
 
 class HomePageEntreprise extends React.Component {
@@ -80,7 +88,8 @@ class HomePageEntreprise extends React.Component {
   }
   setBgChartData = (name) => {
     this.setState({
-      competences: name,
+      competences: name[1],
+      wichCandidat: name[0]
     });
   };
 
@@ -182,22 +191,22 @@ class HomePageEntreprise extends React.Component {
                 <CardBody>
                   <div className="chart-area">
                   <Row>  
-                    <button onClick={() => this.setBgChartData(candidat1[1])} class="btn btn-primary btn-rachid">Candidat 1</button>
+                    <button onClick={() => this.setBgChartData(candidat1)} class="btn btn-primary btn-rachid">Candidat 1</button>
                   </Row>
                   <Row>  
-                    <button onClick={() => this.setBgChartData(candidat2[1])} class="btn btn-primary btn-rachid">Candidat 2</button>
+                    <button onClick={() => this.setBgChartData(candidat2)} class="btn btn-primary btn-rachid">Candidat 2</button>
                   </Row>
                   <Row>  
-                    <button onClick={() => this.setBgChartData(candidat3[1])} class="btn btn-primary btn-rachid">Candidat 3</button>
+                    <button onClick={() => this.setBgChartData(candidat3)} class="btn btn-primary btn-rachid">Candidat 3</button>
                   </Row>
                   <Row>  
-                    <button onClick={() => this.setBgChartData(candidat4[1])} class="btn btn-primary btn-rachid">Candidat 4</button>
+                    <button onClick={() => this.setBgChartData(candidat4)} class="btn btn-primary btn-rachid">Candidat 4</button>
                   </Row>
                   <Row>  
-                    <button onClick={() => this.setBgChartData(candidat5[1])} class="btn btn-primary btn-rachid">Candidat 5</button>
+                    <button onClick={() => this.setBgChartData(candidat5)} class="btn btn-primary btn-rachid">Candidat 5</button>
                   </Row>
                   <Row>  
-                    <button onClick={() => this.setBgChartData(candidat6[1])} class="btn btn-primary btn-rachid">Candidat 6</button>
+                    <button onClick={() => this.setBgChartData(candidat6)} class="btn btn-primary btn-rachid">Candidat 6</button>
                   </Row>
                   </div>
                 </CardBody>
@@ -211,7 +220,7 @@ class HomePageEntreprise extends React.Component {
                   <h5 className="card-category">Me</h5>
                   <CardTitle tag="h3">
                     <i className="tim-icons icon-delivery-fast text-primary" />{" "}
-                    Compétences
+                             Compétences
                   </CardTitle>
                 </CardHeader>
                 <CardBody>

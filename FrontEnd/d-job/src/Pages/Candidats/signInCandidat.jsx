@@ -94,6 +94,10 @@ export default function SignInCandidat() {
             variant="contained"
             color="primary"
             className={classes.submit}
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href='/dashboard';
+              }}
           >
             Sign In
           </Button>

@@ -114,7 +114,7 @@ let chartExample1 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [100, 70, 90, 70, 85, 60, 75, 60, 90, 80, 110, 100]
+          data: [25, 12, 32, 64, 5, 51, 28, 19, 3, 29, 11, 10]
         }
       ]
     };
@@ -361,7 +361,7 @@ const chartExample4 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [6, 2, 9, 5, 5]
+          data: [2, 1, 0, 1, 3]
         }
       ]
     };
@@ -394,7 +394,7 @@ const chartExample4 = {
           },
           ticks: {
             suggestedMin: 1,
-            suggestedMax: 10,
+            suggestedMax: 6,
             padding: 20,
             fontColor: "#9e9e9e"
           }

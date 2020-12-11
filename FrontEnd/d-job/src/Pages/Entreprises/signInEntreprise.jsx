@@ -92,6 +92,10 @@ export default function SignInEntreprise() {
             variant="contained"
             color="primary"
             className={classes.submit}
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href='/mes-offres';
+              }}
           >
             Sign In
           </Button>
