@@ -21,6 +21,15 @@ import classNames from "classnames";
 // react plugin used to create charts
 import { Line, Bar } from "react-chartjs-2";
 
+import Logo from '../../../../assets/logo/logo_D_job.png';
+import C from '../../../../assets/logo/logo_c.png';
+import CPP from '../../../../assets/logo/cpp.png';
+import JS from '../../../../assets/logo/nodejs.png';
+import HS from '../../../../assets/logo/haskell.png';
+import PL from '../../../../assets/logo/perl.png';
+import PH from '../../../../assets/logo/php.png';
+
+
 // reactstrap components
 import {
   Button,
@@ -149,8 +158,9 @@ class Dashboard extends React.Component {
                   <Row>
                     <Col className="text-left" sm="6">
                       <h5 className="card-category">Infos</h5>
-                      <CardTitle tag="h2">Likes</CardTitle>
+                      <CardTitle tag="h2">Likes: 289</CardTitle>
                     </Col>
+                    
                     <Col sm="6">
                       <ButtonGroup
                         className="btn-group-toggle float-right"
@@ -185,9 +195,10 @@ class Dashboard extends React.Component {
                           size="sm"
                           tag="label"
                           // className="btn-simple"
-                          className={classNames("btn-simple", {
-                            active: this.state.bigChartData === "data2"
-                          })}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            window.location.href='/generate-cv';
+                            }}
                           // onClick={() => this.setBgChartData("data2")}
                         >
                           <input
@@ -196,7 +207,7 @@ class Dashboard extends React.Component {
                             type="radio"
                           />
                           <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                            Paramètres
+                            Generate CV
                           </span>
                           <span className="d-block d-sm-none">
                             <i className="tim-icons icon-gift-2" />
@@ -207,9 +218,10 @@ class Dashboard extends React.Component {
                           id="2"
                           size="sm"
                           tag="label"
-                          className={classNames("btn-simple", {
-                            active: this.state.bigChartData === "data3"
-                          })}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            window.location.href='/';
+                            }}
                           // onClick={() => this.setBgChartData("data3")}
                         >
                           <input
@@ -236,6 +248,12 @@ class Dashboard extends React.Component {
                     />
                   </div>
                 </CardBody>
+                  <div>
+                    <button class="btn btn-primary"  onClick={(e) => {
+                            e.preventDefault();
+                            window.location.href='/home-page-candidat';
+                            }}>Postuler</button>
+                  </div>
               </Card>
             </Col>
           </Row>
@@ -270,17 +288,14 @@ class Dashboard extends React.Component {
                 </CardHeader>
                 <CardBody>
                   <div className="chart-area">
-                    {/* <Bar
-                      data={chartExample3.data}
-                      options={chartExample3.options}
-                    /> */}
-                    {/* {tab} */}
-                    {/* <div key={tab}>
-                 <dt>{tab}</dt> */}
-                 <dd>{tab.join("\n")}</dd>
-                 <hr></hr>
-                 {/* </div> */}
+                  <img src={C} width="75" alt="logo" />
+                  <img src={CPP} width="75" alt="logo" />
+                  <img src={JS} width="75" alt="logo" />
+                  <img src={HS} width="75" alt="logo" />
+                  <img src={PL} width="75" alt="logo" />
+                  <img src={PH} width="75" alt="logo" />
                   </div>
+                  
                 </CardBody>
               </Card>
             </Col>
@@ -289,7 +304,7 @@ class Dashboard extends React.Component {
                 <CardHeader>
                   <h5 className="card-category">Offres acceptées</h5>
                   <CardTitle tag="h3">
-                    <i className="tim-icons icon-send text-success" /> 27
+                    <i className="tim-icons icon-send text-success" /> 5
                   </CardTitle>
                 </CardHeader>
                 <CardBody>
@@ -313,7 +328,7 @@ class Dashboard extends React.Component {
             <Col lg="12" md="12">
               <Card>
                 <CardHeader>
-                  <CardTitle tag="h4">Détails des Matchs</CardTitle>
+                  <CardTitle tag="h4">Détails des derniers Matchs</CardTitle>
                 </CardHeader>
                 <CardBody>
                   <Table className="tablesorter" responsive>
